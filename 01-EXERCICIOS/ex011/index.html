@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt.br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mídias em HTML5</title>
+</head>
+<body>
+    <h1>Imagem dinâmica</h1>
+    <p>Tente abrir esse site em vários dispositivos diferentes ou simplesmente aumente e diminua o tamanho do seu navegador.</p>
+    <picture>
+        <source media="(max-width: 750px)" srcset="imagens/foto_pequena.png" size="image/png">
+        <source media="(max-width: 1050px)" srcset="imagens/foto_media.png" size="image/png">
+        <img src="imagens/foto_grande.png" alt="Imagem flexível">  
+    </picture>
+     <!--A ordem de escrita é sempre da menor imagem pra maior, não pode inverter, pois dá erro. A imagem base/maior fica embaixo. O parâmetro max-width significa largura máxima. Ela não trata da altura.-->
+    <h1>Reproduzindo Áudio</h1>
+    <p>Vamos aprender a reproduzir áudios em HTML5.</p>
+    <audio src="midia/IronMaiden.mp3" controls autoplay></audio>
+    <h2>Outra maneira</h2>
+    <audio preload="metadata" controls>
+        <source src="midia/IronMaiden.mp3" type="audio/mpeg"> <!--Essa situação é somente para oferecer opções de extensões para o site do usuário.-->
+        <source src="midia/IronMaiden.wav" type="audio/wav"> <!--Não fizemos esse arquivo WAVE, está aqui somente a título de exemplo.-->
+        <source src="midia/IronMaiden.ogg" type="audio/ogg"> <!--Não fizemos esse arquivo OGG, está aqui somente a título de exemplo.-->
+        <p>Infelizmente seu navegador não consegue reproduzir áudio. <a href="midia/IronMaiden.mp3"> Clique aqui para baixar o arquivo MP3</a></p>
+    </audio>
+</body>
+</html>

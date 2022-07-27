@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vídeos com HTML5</title>
+</head>
+<body>
+    <h1>Inserindo vídeos hospedados localmente</h1>
+    <p>Este víceo está hospedado no meu próprio servidor.</p>
+    <video src="midia/meu_video_mp4.mp4" width="300px" controls></video>
+    
+    <h2>Outra forma com vários formatos para vários tipos de navegador, caso o navegador do usuário não for compatível.</h2>
+    <video width="300px" poster="imagens/natureza.jpg" controls autoplay loop>
+        <source src="midia/meu_video_mp4.mp4" type="video/mp4">
+        <source src="midia/meu_video_m4v.m4v" type="video/m4v">
+        <source src="midia/meu_video_webm.webm" type="video/webm">
+        <p>Seu navegador não tem compatibilidade com reprodução de vídeos.</p> <!--Como o navegador vai testar compatibilidade de cima pra baixo, essa mensagem só vai aparecer se não for compatível com nenhum formato de vídeo disponibilizado.-->
+    </video>
+
+    <h2>Inserindo vídoes do YouTube</h2>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/wISS2RcZm8U" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/yLOUahp-RIc?start=6" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <!--Para fazer dessa forma, basta acessar o vídeo no YouTube, abrir o botão de compartilhar e depois a opção de INCORPORAR, copiar e colar aqui no VSCode.-->
+    
+</body>
+</html>

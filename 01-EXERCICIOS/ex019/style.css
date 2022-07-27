@@ -1,0 +1,42 @@
+@charset "UTF-8";
+
+body{
+    background-color: aquamarine;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1{
+    color: rgb(8, 110, 76);
+}
+
+h1#principal{
+    text-align: center;
+    background-color: gray;
+    color: white;
+}
+
+h2{
+    color:blueviolet}
+/* Tudo em HTML usando id = # em CSS. id(html) = #(css)  O problema é que só pode ter um único id no documento. (funciona se colocar em mais de um lugar, mas está errado)
+    Tudo em HML usando class = . em CSS      class(html) = .(css)*/
+.basico {
+    color: coral;
+    font-style: italic;
+
+}
+/* no CSS não coloca a class "h2.basico" somente ".basico" */    
+
+.intermediario{
+    color: crimson;
+    
+}
+
+.avancado{
+    color: deeppink;
+    font-weight: bolder;
+}
+
+.destaque{
+    background-color: yellow;
+    width: 50%;
+}

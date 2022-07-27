@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Grouping Tags Semânticas</title>
+        <style>
+            body{
+                font-family: Arial, Helvetica, sans-serif;
+                background-color: dimgray;
+                margin: 0px;
+            }
+            header{
+                background-color: white;
+                padding: 10px;
+                margin: 10px;
+            }
+            
+            main{
+                background-color: white;
+                padding: 10px;
+                margin: 10px;
+            }
+            
+            nav{
+                background-color:rgb(153, 152, 152);
+                padding:3px
+            }
+
+            nav > a{
+                text-decoration: none;
+                color: blue;
+                font-weight: bold;
+                margin-right: 30px;
+            }
+
+            nav > a:hover{
+                text-decoration: underline;
+            }
+
+            article{
+
+                background-color: lightgray;
+                padding: 5px
+            }
+            article > aside{
+                background-color: rgb(156, 156, 156);
+            }
+
+            footer{
+                background-color: black;
+                color:white;
+                text-align:center;
+                padding: 1px;
+                margin: 0px;
+            }
+
+            div#bola {
+                height: 100px;
+                width: 100px;
+                background-color: white;
+                margin: 20px;
+                border-radius: 50%;
+            }
+
+
+
+        </style>
+</head>
+<body>
+    <header>
+        <h1>Meu Site</h1>
+        <nav>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+        </nav>
+    </header>
+    <main>
+        <section id="assuntos">
+            <p>Esportes Política e Tecnologia</p>
+        </section>
+        <section id="noticias">
+            <article>
+                <h2>Notícias sobre o Brasil</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum error natus officiis reprehenderit itaque dolor, deleniti magnam odio explicabo corrupti beatae, molestias exercitationem? Beatae et aut rerum, debitis tempore odio.</p>
+                <aside>
+                    <p>Artigo escrito por José da Silva</p>
+                </aside>
+            </article>
+        </section>
+    </main>
+    <footer>
+        <p>Desenvolvido pelo CursoemVídeo</p>
+    </footer>
+    <div id="bola"></div>
+    <!--A ordem entre article e section pode ser invertida, ou seja, ao invés de article dentro de section, pode ser section dentro de article; não está errado, pode fazer. Serve também para as DIVS genéricas "div".
+    Eu posso colocar qualquer "grouping tag" dentro de qualquer "grouping tag"
+    header=cabeçalho, main=principal, footer=rodapé
+-->
+</body>
+</html>

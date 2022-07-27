@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modelo de Caixas</title>
+    <style>
+        h1 {
+            background-color:lightgray;
+            height: 300px;
+            width:300px;
+            border-width: 10px;
+            border-style: solid;
+            border-color: darkslategray;
+
+            padding-top: 10px;
+            padding-right: 10px;
+            padding-bottom: 10px;
+            padding-left: 10px;
+            /* Quando eu estiver montando uma caixa, devo seguir obrigatoriamente o sentido horário, conforme o exemplo acima.*/
+            /* Para abrir o DEVTOOLS (extensão do chrome pra ver as configs do site), na página web no chrome, clicar com o botão direito e depois em inspecionar*/
+            /* Posso reduzir pra uma shorthand 
+            (quando os valores forem todos iguais, basta colocar uma vez só, vai servir pra todos os lados):  padding: 10px
+            Em outra situação, se eu colocar somente 2 valores, o pc vai entender que o primeiro valor se refere ao topo e ao debaixo; e o segundo valor, se refere aos lados direito e esquerdo, ex: 10px 20px (em cima e em baixo vão ter 10px; e lado direito e esquerdo vai ter 20px)*/
+
+            margin-top: 20px;
+            margin-right: 10px;
+            margin-bottom: 40px;
+            margin-left: 15px;
+            /* Posso reduzir pra uma shorthand:  margin: 20px 10px 40px 15px
+            Se eu quiser que as margens da direita e esquerda fiquem centralizadas na tela: margin: 20px auto 40px auto
+            */
+
+            outline-width: 5px;
+            outline-style: dashed;
+            outline-color: red;
+            /* Posso reduzir pra uma shorthand:  outline: 5px dashed red*/
+        
+        }
+
+        a {
+            border-width: 10px;
+            border-style: solid;
+            border-color: red;
+        }
+    </style>
+</head>
+<body>
+    <h1>Exemplo de caixa box-level</h1>
+    <p>Parágrafos também são exemplos de box-level, mas os <a href="">links são exemplos de caixas inline-level</a>. Vamos ver como tudo isso</p>
+</body>
+</html>

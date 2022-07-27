@@ -1,0 +1,8 @@
+@charset "UTF-8";
+
+@font-face{
+    font-family: 'Droid';
+    src: url('fonts/IDroid.otf') format('opentype'), url('fonts/IDroid Bold.otf') format('opentype'), url('fonts/IDroid Italic.otf') format('opentype'), url('fonts/IDroid Bold Italic.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
