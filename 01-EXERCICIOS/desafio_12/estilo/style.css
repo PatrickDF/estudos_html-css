@@ -6,8 +6,8 @@
 
 
 :root {
-    --fonte1: Verdana,Geneva, Tahoma, sans-serif;
-    --fonte2:'Passion One', cursiva;
+    --fonte1: Verdana, Geneva, Tahoma, sans-serif;
+    --fonte2:'Passion One', cursive;
     --fonte3:'Sriracha', cursive;
 }
 
@@ -21,7 +21,7 @@
 html, body {
     min-height: 100vh;
     background-color: darkgray;
-    font-family:var(--fonte1)
+    font-family:var(--fonte1);
 }
 
 header {
@@ -49,7 +49,7 @@ header a, footer a{
 }
 
 header a:hover, footer a:hover{
-    text-decoration:underline
+    text-decoration:underline;
 }
 
 section{
@@ -58,7 +58,7 @@ section{
     line-height: 2em;
     padding-left: 30px;
     font-family: var(--fonte3);
-    font-size:5vw;
+    font-size:3.5vw;
 }
 
 
@@ -73,8 +73,10 @@ section.imagem{
 }
 
 section.imagem > p{
+    display: inline-block;
+    padding: 5px;
     background-color: rgba(0, 0, 0, 0.253);
-    width: 400px;
+    
 }
 
 
