@@ -7,6 +7,12 @@
     <title>Tabelas</title>
 
     <style>
+        caption{
+            font-size: 1.5em;
+            font-weight: bolder;
+            padding: 10px;
+            background-color:lightgreen;
+        }
         body{
             font-family:Arial, Helvetica, sans-serif;
         }
@@ -15,19 +21,34 @@
             width: 500px;
             border: 3px black;
             border-collapse: collapse;
+            position: relative; /*essa parte é para deixar fixa na tela a parte de cima da tabela, ao rolar a lista*/
         }
+
+        thead > tr > th{
+            position: sticky;
+            top:-1px; /* Aqui, se com valor (0px) ainda estiver aparecendo um risquinho no alto, posso colocar um valor negativo(-1px) para colar mais*/
+            background-color: rgb(94, 93, 93); /* Essa cor é a mesma que foi colocada para o thead*/
+        } /* Esse efeito some quando alcança o final da tabela*/
+
+
         td, th {
             border: 1px solid black;
             padding: 10px;    
         }
 
         thead, tfoot{
-            background-color: gray;
+            background-color: rgb(94, 93, 93);
             color: white;
         }
         .num {
             text-align: right;
         }
+
+        tbody > tr:nth-child(2n){
+            background-color: lightgray;
+        } /* 'nth-child' é uma pseudoclasse, e '2n' é a frequência, no caso de 2 em 2 linhas
+                posso substituir por par e ímpar (linha), no caso em inglês (even e odd respectivamente)
+        */
 
 
     </style>
@@ -39,6 +60,7 @@
     <h1>Uso de Tabelas Grandes</h1>
     <!-- ANATOMIA PARA TABELAS GRANDES
         TABELA
+            CAPTION
             THEAD
                 TR, TD, TH
             TBODY
@@ -49,10 +71,11 @@
     -->
 
     <table>
+        <caption>População das Unidades Federativas</caption> <!-- Caption = Legenda da tabela -->
         <thead>
             <tr>
-                <th>Estado</th>
-                <th>População</th>
+                <th scope="col">Estado</th>
+                <th scope="col">População</th>
             </tr>
         </thead>
         <tbody>
@@ -68,15 +91,41 @@
                 <td>Distrito Federal</td>
                 <td class="num">3.094.325</td>
             </tr>
-
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td class="num">17.463.349</td>
+            </tr>
+            <tr>
+                <td>Bahia</td>
+                <td class="num">14.985.284</td>
+            </tr>
+            <tr>
+                <td>Paraná</td>
+                <td class="num">11.597.484</td>
+            </tr>
+            <tr>
+                <td>Rio Grande do Sul</td>
+                <td class="num">11.466.630</td>
+            </tr>
+            <tr>
+                <td>Santa Catarina</td>
+                <td class="num">7.338.473</td>
+            </tr>
+            <tr>
+                <td>Espírito Santo</td>
+                <td class="num">4.108.508</td>
+            </tr>
         </tbody>
         <tfoot>
             <tr>
-                <th>Total de Habitantes</th>
+                <th scope="row">Total de Habitantes</th>
                 <td class="num"><strong>71.155.380</strong></td>
             </tr>
         </tfoot>
     </table>
+    <footer>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quae, iste? Inventore, soluta perferendis expedita accusamus magnam aspernatur molestiae quibusdam ut amet officia autem explicabo tenetur corrupti ea quod nihil quisquam?Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quae, iste? Inventore, soluta perferendis expedita accusamus magnam aspernatur molestiae quibusdam ut amet officia autem explicabo tenetur corrupti ea quod nihil quisquam?Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quae, iste? Inventore, soluta perferendis expedita accusamus magnam aspernatur molestiae quibusdam ut amet officia autem explicabo tenetur corrupti ea quod nihil quisquam?Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quae, iste? Inventore, soluta perferendis expedita accusamus magnam aspernatur molestiae quibusdam ut amet officia autem explicabo tenetur corrupti ea quod nihil quisquam?Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quae, iste? Inventore, soluta perferendis expedita accusamus magnam aspernatur molestiae quibusdam ut amet officia autem explicabo tenetur corrupti ea quod nihil quisquam?Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quae, iste? Inventore, soluta perferendis expedita accusamus magnam aspernatur molestiae quibusdam ut amet officia autem explicabo tenetur corrupti ea quod nihil quisquam?Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quae, iste? Inventore, soluta perferendis expedita accusamus magnam aspernatur molestiae quibusdam ut amet officia autem explicabo tenetur corrupti ea quod nihil quisquam?Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quae, iste? Inventore, soluta perferendis expedita accusamus magnam aspernatur molestiae quibusdam ut amet officia autem explicabo tenetur corrupti ea quod nihil quisquam?Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quae, iste? Inventore, soluta perferendis expedita accusamus magnam aspernatur molestiae quibusdam ut amet officia autem explicabo tenetur corrupti ea quod nihil quisquam?Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quae, iste? Inventore, soluta perferendis expedita accusamus magnam aspernatur molestiae quibusdam ut amet officia autem explicabo tenetur corrupti ea quod nihil quisquam?Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quae, iste? Inventore, soluta perferendis expedita accusamus magnam aspernatur molestiae quibusdam ut amet officia autem explicabo tenetur corrupti ea quod nihil quisquam?Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quae, iste? Inventore, soluta perferendis expedita accusamus magnam aspernatur molestiae quibusdam ut amet officia autem explicabo tenetur corrupti ea quod nihil quisquam?Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quae, iste? Inventore, soluta perferendis expedita accusamus magnam aspernatur molestiae quibusdam ut amet officia autem explicabo tenetur corrupti ea quod nihil quisquam?Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quae, iste? Inventore, soluta perferendis expedita accusamus magnam aspernatur molestiae quibusdam ut amet officia autem explicabo tenetur corrupti ea quod nihil quisquam?Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quae, iste? Inventore, soluta perferendis expedita accusamus magnam aspernatur molestiae quibusdam ut amet officia autem explicabo tenetur corrupti ea quod nihil quisquam?Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quae, iste? Inventore, soluta perferendis expedita accusamus magnam aspernatur molestiae quibusdam ut amet officia autem explicabo tenetur corrupti ea quod nihil quisquam?Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quae, iste? Inventore, soluta perferendis expedita accusamus magnam aspernatur molestiae quibusdam ut amet officia autem explicabo tenetur corrupti ea quod nihil quisquam?Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quae, iste? Inventore, soluta perferendis expedita accusamus magnam aspernatur molestiae quibusdam ut amet officia autem explicabo tenetur corrupti ea quod nihil quisquam?Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quae, iste? Inventore, soluta perferendis expedita accusamus magnam aspernatur molestiae quibusdam ut amet officia autem explicabo tenetur corrupti ea quod nihil quisquam?Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quae, iste? Inventore, soluta perferendis expedita accusamus magnam aspernatur molestiae quibusdam ut amet officia autem explicabo tenetur corrupti ea quod nihil quisquam?Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quae, iste? Inventore, soluta perferendis expedita accusamus magnam aspernatur molestiae quibusdam ut amet officia autem explicabo tenetur corrupti ea quod nihil quisquam?Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quae, iste? Inventore, soluta perferendis expedita accusamus magnam aspernatur molestiae quibusdam ut amet officia autem explicabo tenetur corrupti ea quod nihil quisquam?Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quae, iste? Inventore, soluta perferendis expedita accusamus magnam aspernatur molestiae quibusdam ut amet officia autem explicabo tenetur corrupti ea quod nihil quisquam?Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quae, iste? Inventore, soluta perferendis expedita accusamus magnam aspernatur molestiae quibusdam ut amet officia autem explicabo tenetur corrupti ea quod nihil quisquam?Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quae, iste? Inventore, soluta perferendis expedita accusamus magnam aspernatur molestiae quibusdam ut amet officia autem explicabo tenetur corrupti ea quod nihil quisquam?Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quae, iste? Inventore, soluta perferendis expedita accusamus magnam aspernatur molestiae quibusdam ut amet officia autem explicabo tenetur corrupti ea quod nihil quisquam?Lorem ipsum dolor sit, amet consectetur </p>
+    </footer>
 
 </body>
 </html>
