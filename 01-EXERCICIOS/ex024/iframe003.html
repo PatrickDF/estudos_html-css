@@ -34,7 +34,13 @@
         <p>Infelizmente seu navegador não é compatível com isso.</p>
     </iframe>
     <!-- Neste caso foi necessário vincular o iframe com a linha 'Primeira página' colocando um 'name' no <iframe> e depois colocando esse 'name' na 'target' do ancoramento <a> da 'Primeira página' -->
-    <!-- Se eu quiser colocar uma capa para o <iframe> é só colocar o endereço da imagem em 'src' do <iframe> -->
+    <!-- Se eu quiser iniciar/abrir com algum das opções dos arquivos no <iframe> é só colocar o endereço do arquivo em 'src' do <iframe> -->
+        
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fuga, nostrum nemo tenetur quos vero quidem reprehenderit magni quisquam. Quo, est. Eum fuga possimus eveniet aliquid reiciendis consequuntur minus, ex accusantium!</p>
+    <iframe id="tela" name="bolota" srcdoc="<h1>Escolha uma das opções acima</h1><p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fuga, nostrum nemo tenetur quos vero quidem reprehenderit magni quisquam. Quo, est. Eum fuga possimus eveniet aliquid reiciendis consequuntur minus, ex accusantium!</p><img src='imagens/cursoemvideo.jpg'>" frameborder="0">
+        <p>Infelizmente seu navegador não é compatível com isso.</p>
+    </iframe>
+    <!-- Outra opção, é criar uma capa com algo diferente das 3 opções de arquivos, pra isso tem que substituir o 'src' por 'srcdoc', depois é só escrever dentro das aspas duplas como um <body> normal. Posso inclusive colocar uma imagem junto. Outro detalhe é obedecer a hierarquia das "aspas", como tem "aspas" duplas fora do parâmetro, deve ser usado 'aspas' simples dentro do parâmetro -->
     <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fuga, nostrum nemo tenetur quos vero quidem reprehenderit magni quisquam. Quo, est. Eum fuga possimus eveniet aliquid reiciendis consequuntur minus, ex accusantium!</p>
 </body>
 </html>
