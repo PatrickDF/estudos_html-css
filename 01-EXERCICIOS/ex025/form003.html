@@ -10,6 +10,9 @@
             font-family: Arial, Helvetica, sans-serif;
             padding: 5px;
         }
+        input{
+            border-radius: 5px;
+         }
     </style>
 </head>
 <body>
@@ -18,6 +21,22 @@
         <div>
             <label for="inome">Nome:</label>
             <input type="text" name="nome" id="inome" placeholder="nome completo" autocomplete="name" maxlength="30" required>
+        </div>
+        <div>
+            <label for="imedia">Média:</label>
+            <input type="number" name="media" id="imedia" min="0" max="10" placeholder="0 a 10" step="0.1" required> <!-- max e min porque é numérico -->
+        </div>
+        <div>
+            <label for="imes">Período Letivo</label>
+            <input type="month" name="mes" id="imes" required>
+        </div>
+        <div>
+            <label for="iprova">Data da Prova</label>
+            <input type="date" name="prova" id="iprova" value="2022-08-08">
+        </div>
+        <div>
+            <label for="ihora">Horário da Prova</label>
+            <input type="time" name="hora" id="ihora">
         </div>
         <div>
             <input type="submit" value="Enviar">
