@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Documento</title>
+    <style>
+        *{
+            font-family: Arial, Helvetica, sans-serif;
+            padding: 5px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Teste de Formulário</h1>
+    <form action="cadastro.php" method="get">
+        <div>
+            <label for="iusuario">Usuário:</label>
+            <input type="text" name="usu" id="iusu" minlength="5" maxlength="30" size="25" autocomplete="" required>
+        </div>
+        <div>
+            <label for="isen">Senha:</label>
+            <input type="password" name="sen" id="isen" minlength="8" placeholder="mínimo 8 letras" autocomplete="current-password" required>
+        </div>
+        <div>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </div>
+    </form>
+    <!-- Nesse exemplo o "usuário" e "senha" são obrigatórios. Para não deixar enviar com os campos em branco, pra isso temos que colocar um atributo dentro do "imput" que se chama "required" 
+    Outro atributo é a quantidade mínima e máxima de caracteres que podem ser inseridos em cada campo, pra isso utilizamos o "minlength" e "maxlength".
+    Outro atributo é o tamanho da caixa do "input", podemos alterar com "size". Um grande detalhe nesse ponto é que o tamanho da caixa não interfere na quantidade de caracteres que podem ser colocados, um exemplo é o "usuário" acima, onde o máximo de caracteres é 30, e o tamanho da caixa é para 25 caracteres, a caixa vai permanecer estática e o texto vai "caminhar" pra frente. 
+    Outro atributo é o "placeholder" que coloca dentro da caixa de "input" algum tipo de informação ao usuário, que some ao digitar algo.
+    Outro atributo que merece atenção redobrada é o "autocomplete" (autocompletar o texto), pois dentro do <form> ele é uma coisa, e dentro do <input> é outra completamente diferente. Dentro de <form> pode ser (on ou off), padrão é (on). Já dentro do <input> ele possui inúmeras opções pré-definidas -->
+</body>
+</html>
